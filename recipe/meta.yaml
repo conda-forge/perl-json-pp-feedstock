@@ -1,6 +1,6 @@
 {% set name = "perl-json-pp" %}
-{% set version = "4.11" %}
-{% set sha256 = "3ececec812b5fd45ae0db513072032b08af4319c242dc4e159ba36804670f169" %}
+{% set version = "4.16" %}
+{% set sha256 = "8bc2f162bafc42645c489905ad72540f0d3c284b360c96299095183c30cc9789" %}
 
 package:
   name: {{ name }}
@@ -18,7 +18,7 @@ build:
     - make
     - make test
     - make install VERBINST=1
-  
+
 requirements:
   build:
     - make
@@ -37,7 +37,7 @@ about:
   home: https://metacpan.org/dist/JSON-PP
   license: GPL-1.0-or-later OR Artistic-1.0-Perl
   license_family: OTHER
-  summary: 'JSON::XS compatible pure-Perl module.'
+  summary: JSON::XS compatible pure-Perl module.
   license_file:
     - {{ environ["PREFIX"] }}/man/man1/perlartistic.1
     - {{ environ["PREFIX"] }}/man/man1/perlgpl.1
